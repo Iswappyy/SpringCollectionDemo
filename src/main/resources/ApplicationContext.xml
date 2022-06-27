@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+
+	<bean id="empCollection" class="com.prowings.collectionspring.Employee">
+		<property name="name" value="Swapnil"></property>
+
+		<property name="phones">
+			<list>
+				<value>"9405652218"</value>
+				<value>"8705651111"</value>
+				<value>"7805651324"</value>
+				<value>"9805112200"</value>
+				<value>"8808652299"</value>
+			</list>
+		</property>
+
+		<property name="address">
+			<set>
+				<value>"Pune"</value>
+				<value>"Amravati"</value>
+				<value>"Nasik"</value>
+				<value>"Aurangabad"</value>
+				<value>"Nagpur"</value>
+			</set>
+		</property>
+		<property name="cources">
+			<map>
+				<entry key="Java: " value=" 6 Months" />
+				<entry key="Python: " value=" 8 Months" />
+				<entry key="Swift: " value=" 12 Months" />
+				<entry key="C++: " value=" 3 Months" />
+				<entry key="JavaScript: " value=" 1 Months" />
+
+			</map>
+
+		</property>
+		<property name="books">
+			<props>
+				<prop key="book1 :">Thermodynamics</prop>
+				<prop key="book2 :">Physics</prop>
+				<prop key="book3 :">Mechanics</prop>
+				<prop key="book4 :">Mathematics</prop>
+				<prop key="book5 :">Science</prop>
+			</props>
+
+		</property>
+
+	</bean>
+</beans>
+    
